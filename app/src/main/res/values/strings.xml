@@ -1,0 +1,58 @@
+<resources>
+    <!--version 2.0-->
+    <string name="app_name">Valorant Soundboard</string>
+    <string name="package_name">com.jmapps.valorantsoundboard</string>
+
+
+    <!--Ad-->
+    <string name="Ad_unit_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_frequency">3</string>
+
+
+    <!--Tab names-->
+    <string name="tab1">Astra</string>
+    <string name="tab2">Breach</string>
+    <string name="tab3">Brimstone</string>
+    <string name="tab4">Cypher</string>
+    <string name="tab5">Jett</string>
+    <string name="tab6">KAY/O</string>
+    <string name="tab7">Killjoy</string>
+    <string name="tab8">Omen</string>
+    <string name="tab9">Phoenix</string>
+    <string name="tab10">Raze</string>
+    <string name="tab11">Reyna</string>
+    <string name="tab12">Sage</string>
+    <string name="tab13">Skye</string>
+    <string name="tab14">Sova</string>
+    <string name="tab15">Viper</string>
+    <string name="tab16">Yoru</string>
+
+
+    <!--Share app-->
+    <string name="playstore_link">-PUT THE LINK TO YOUR APP HERE-</string>
+    <string name="share_text">Get the</string>
+    <string name="share_via">Share via...</string>
+
+    <!--Sidebar titles-->
+    <string name="menu_title_sound">Sounds</string>
+    <string name="menu_title_share">Share app</string>
+
+    <!--Long click at sound-->
+    <string name="share_sound_title">Share sound</string>
+    <string name="set_tone_as_title">Set tone as...</string>
+    <string name="share_sound_via">Share sound via...</string>
+    <string name="ringtone_title">Ringtone</string>
+    <string name="notification_title">Notification</string>
+    <string name="alarm_title">Alarm tone</string>
+
+    <!--Permission-->
+    <string name="notice_that_app_needs_access_to_settings">The app needs access to your settings</string>
+
+    <!--This is where the sounds are saved if you share or save one-->
+    <string name="foldername">soundboardfiles</string>
+
+
+
+</resources>
