@@ -169,7 +169,7 @@ public class Tab17 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabThreeItemClicked(position);
+                        ((MainActivity) context).TabSeventeenItemClicked(position);
                     }
                 }
             });

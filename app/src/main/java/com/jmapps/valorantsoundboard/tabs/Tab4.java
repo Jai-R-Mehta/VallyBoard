@@ -57,7 +57,7 @@ public class Tab4 extends Fragment {
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
+            R.raw.thak_thak,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
             R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
             R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
 
@@ -170,7 +170,7 @@ public class Tab4 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabThreeItemClicked(position);
+                        ((MainActivity) context).TabFourItemClicked(position);
                     }
                 }
             });

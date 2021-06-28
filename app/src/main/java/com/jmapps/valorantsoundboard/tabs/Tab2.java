@@ -56,7 +56,7 @@ public class Tab2 extends Fragment {
 
     // Here you can change the mp3 files of the buttons in Tab2
     public static int[] soundfiles ={
-            R.raw.baby,R.raw.heartbeating,R.raw.laughing,R.raw.examplesound,R.raw.examplesound,
+            R.raw.thak_thak,R.raw.heartbeating,R.raw.laughing,R.raw.examplesound,R.raw.examplesound,
             R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
             R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound, R.raw.examplesound
     };

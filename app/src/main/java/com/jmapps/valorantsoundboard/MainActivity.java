@@ -15,11 +15,25 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.jmapps.valorantsoundboard.tabs.Tab10;
+import com.jmapps.valorantsoundboard.tabs.Tab11;
+import com.jmapps.valorantsoundboard.tabs.Tab12;
+import com.jmapps.valorantsoundboard.tabs.Tab13;
+import com.jmapps.valorantsoundboard.tabs.Tab14;
+import com.jmapps.valorantsoundboard.tabs.Tab15;
+import com.jmapps.valorantsoundboard.tabs.Tab16;
+import com.jmapps.valorantsoundboard.tabs.Tab17;
 import com.jmapps.valorantsoundboard.tabs.Tab3;
 import com.jmapps.valorantsoundboard.tabs.Tab1;
 import com.jmapps.valorantsoundboard.tabs.Tab2;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.jmapps.valorantsoundboard.tabs.Tab4;
+import com.jmapps.valorantsoundboard.tabs.Tab5;
+import com.jmapps.valorantsoundboard.tabs.Tab6;
+import com.jmapps.valorantsoundboard.tabs.Tab7;
+import com.jmapps.valorantsoundboard.tabs.Tab8;
+import com.jmapps.valorantsoundboard.tabs.Tab9;
 
 import java.io.File;
 
@@ -99,6 +113,91 @@ public class MainActivity extends AppCompatActivity {
     public void TabThreeItemClicked ( int position){
         cleanUpMediaPlayer();
         mp=MediaPlayer.create(MainActivity.this, Tab3.soundfiles[position]);
+        mp.start();
+    }
+
+    // Is listening which sound on Tab4 has been clicked
+    public void TabFourItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab4.soundfiles[position]);
+        mp.start();
+    }
+    // Is listening which sound on Tab5 has been clicked
+    public void TabFiveItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab5.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabSixItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab6.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabSevenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab7.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabEightItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab8.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabNineItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab9.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabTenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab10.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabElevenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab11.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabTweleveItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab12.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabThirteenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab13.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabFourteenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab14.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabFifteenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab15.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabSixteenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab16.soundfiles[position]);
+        mp.start();
+    }
+
+    public void TabSeventeenItemClicked ( int position){
+        cleanUpMediaPlayer();
+        mp=MediaPlayer.create(MainActivity.this, Tab17.soundfiles[position]);
         mp.start();
     }
 
