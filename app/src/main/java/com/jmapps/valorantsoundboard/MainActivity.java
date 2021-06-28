@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         mp.start();
     }
 
-    public void TabTweleveItemClicked ( int position){
+    public void TabTwelveItemClicked ( int position){
         cleanUpMediaPlayer();
         mp=MediaPlayer.create(MainActivity.this, Tab12.soundfiles[position]);
         mp.start();
