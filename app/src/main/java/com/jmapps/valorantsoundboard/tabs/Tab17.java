@@ -76,7 +76,7 @@ public class Tab17 extends Fragment {
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabThreeGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabSeventeenGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override

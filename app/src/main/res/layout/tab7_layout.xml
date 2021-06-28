@@ -6,10 +6,10 @@
     android:id="@+id/tab7">
 
     <GridView
-        android:background="#ffffff"
+        android:background="@drawable/killjoy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tabThreeGridView"
+        android:id="@+id/tabSevenGridView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:numColumns="auto_fit"
