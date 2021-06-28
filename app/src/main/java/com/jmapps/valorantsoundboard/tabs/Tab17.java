@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab16 extends Fragment {
+public class Tab17 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -69,8 +69,8 @@ public class Tab16 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab16_layout,container,false);
-        layout=rootView.findViewById(R.id.tab16);
+        View rootView=inflater.inflate(R.layout.tab17_layout,container,false);
+        layout=rootView.findViewById(R.id.tab17);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 

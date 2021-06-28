@@ -22,6 +22,7 @@ import com.jmapps.valorantsoundboard.tabs.Tab13;
 import com.jmapps.valorantsoundboard.tabs.Tab14;
 import com.jmapps.valorantsoundboard.tabs.Tab15;
 import com.jmapps.valorantsoundboard.tabs.Tab16;
+import com.jmapps.valorantsoundboard.tabs.Tab17;
 import com.jmapps.valorantsoundboard.tabs.Tab2;
 import com.jmapps.valorantsoundboard.tabs.Tab3;
 import com.jmapps.valorantsoundboard.tabs.Tab4;
@@ -39,7 +40,7 @@ public class TabFragment extends Fragment {
     int tab_change_counter;
     AdRequest adRequest;
 
-    public static int int_items = 16;
+    public static int int_items = 17;
 
 
     @Nullable
@@ -142,6 +143,9 @@ public class TabFragment extends Fragment {
             if(position == 15){
                 return new Tab16();
             }
+            if(position == 16){
+                return new Tab17();
+            }
         return null;
         }
 
@@ -182,6 +186,8 @@ public class TabFragment extends Fragment {
                     return getText(R.string.tab15);
                 case 15 :
                     return getText(R.string.tab16);
+                case 16 :
+                    return getText(R.string.tab17);
 
             }
                 return null;
