@@ -49,16 +49,16 @@ public class Tab3 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Can't close the settings menu","Got a problem on me","That brimstone is stubborn","Get off","Hands dirty",
+            "Headshot","In charge","Light em up","Molly!","Nice try",
+            "Not so tough","old dog","Shoot the bad guys","Teach them","Ultimate","Watch and learn"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.boomer,R.raw.double1,R.raw.double2,R.raw.getoff,R.raw.handsdirty,
+            R.raw.Headshot,R.raw.incharge,R.raw.lightemup,R.raw.molly,R.raw.Nicetry,
+            R.raw.notsotough,R.raw.olddog,R.raw.shootthebadguys,R.raw.teachthem,R.raw.Ultimate,R.raw.watchnlearn
 
     };
 
