@@ -52,7 +52,7 @@ public class Tab4 extends Fragment {
     public String[] items ={
             "Cage triggered","Where is everyone hiding","Cypher on their side","Copy of me","Distracted once I reveal",
             "Found You","Get out of my city","Gifts behind","Gimme a corpse","Underground doctor",
-            "Exactly where ypu are","Crush your eyes","I will find You","My eyes are better","Camera is broken",
+            "Exactly where you are","Crush your eyes","I will find You","My eyes are better","Camera is broken",
             "Suck our souls","Always a killer","reveal their secrets"
     };
 
