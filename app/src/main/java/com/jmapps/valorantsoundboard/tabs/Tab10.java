@@ -50,16 +50,27 @@ public class Tab10 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Another Raze!","The bigger they are","Blow something up","Bomb-Buddy out","Breach dancing",
+            "Cant make a dent","Collateral Damage","Colorful Kill","Didn't expect that","Fire in the hole",
+            "I got this","Im having a blast!","Here comes the party","Im pumped","Like u could stop me",
+            "I love explosions","None of my stuff has malfunctioned","Milzamoriz","Mia Familia ","Money baby",
+            "Never had a doubt","Obliterated","Ola Jett","Go out with a BANG","Party's over",
+            "Party just begun","Enemy raze line","Salvador","Satchel out","send u off with a bang",
+            "sister from another mister","squadzinio and dynamite","surprise","take a nap","that raze sucks",
+            "cypher wants to watch?","My bad","wouldn't fight back"
+
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.anotherraze,R.raw.biggertheyare,R.raw.blowsomething,R.raw.bombbuddyout,R.raw.breachdancing,
+            R.raw.cantevenmakeadent,R.raw.collateraldmg,R.raw.colorfullkill,R.raw.didntexpectthat,R.raw.fireinthewhole,
+            R.raw.firepower,R.raw.havingablast,R.raw.herecomesparty,R.raw.impumped,R.raw.likeucouldstopme,
+            R.raw.loveexplosions,R.raw.malfunctined,R.raw.milzamoriz,R.raw.misfamilia,R.raw.moneybaby,
+            R.raw.neverhaddoubt,R.raw.obliterated,R.raw.olajett,R.raw.outwithabang,R.raw.partyisover,
+            R.raw.partyjustbegun,R.raw.pickthemapart,R.raw.salvadoor,R.raw.satchelout,R.raw.senduoffbang,
+            R.raw.sisterfrommister,R.raw.squadzinio,R.raw.surprise,R.raw.takeanap,R.raw.thatrazesuclks,
+            R.raw.watchus,R.raw.whatimiss,R.raw.wouldntfightback
 
     };
 
