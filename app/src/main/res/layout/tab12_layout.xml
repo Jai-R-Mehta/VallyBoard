@@ -7,6 +7,7 @@
 
     <GridView
         android:background="@drawable/sage"
+        android:backgroundTint="@color/sage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tabTwelveGridView"

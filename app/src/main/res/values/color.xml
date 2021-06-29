@@ -8,5 +8,22 @@
     <color name="button_end_color">#777e93</color>
     <color name="black">#042e27</color>
     <color name="white">#FFF</color>
+    <color name="astr">#7b5e94</color>
+    <color name="brea">#ec5e3f</color>
+    <color name="brim">#83300d</color>
+    <color name="cyph">#d6c8aa</color>
+    <color name="jett">#83c2c0</color>
+    <color name="kill">#f7e363</color>
+    <color name="kayo">#3b3f48</color>
+    <color name="omen">#636696</color>
+    <color name="phoe">#eca22b</color>
+    <color name="raze">#e49c39</color>
+    <color name="reyn">#7e4286</color>
+    <color name="sage">#10aa84</color>
+    <color name="skye">#758d4f</color>
+    <color name="sova">#5abaef</color>
+    <color name="vipe">#367b60</color>
+    <color name="yoru">#5a5dc6</color>
+
 
 </resources>

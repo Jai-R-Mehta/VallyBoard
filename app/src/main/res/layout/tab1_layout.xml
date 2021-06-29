@@ -9,6 +9,7 @@
 
     <GridView
         android:background="@drawable/astra"
+        android:backgroundTint="@color/astr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tabOneGridView"
