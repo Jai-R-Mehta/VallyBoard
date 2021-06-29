@@ -50,16 +50,18 @@ public class Tab4 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Cage triggered","Where is everyone hiding","Cypher on their side","Copy of me","Distracted once I reveal",
+            "Found You","Get out of my city","Gifts behind","Gimme a corpse","Underground doctor",
+            "Exactly where ypu are","Crush your eyes","I will find You","My eyes are better","Camera is broken",
+            "Suck our souls","Always a killer","reveal their secrets"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.thak_thak,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.cagetriggered,R.raw.whereiseveryonehiding,R.raw.cypherduplicate,R.raw.cypherduplicate2,R.raw.distractedwhenireveal,
+            R.raw.foundyou,R.raw.getoutofmycity,R.raw.giftsbehind,R.raw.gimmeacorpse,R.raw.hatevisitingundergrounddoctors,
+            R.raw.iknowexactlywhereuare,R.raw.iwillcrushyoureyes,R.raw.iwillfindyou,R.raw.myeyesarebetterthanyours,R.raw.oneofmycamerasisbroken,
+            R.raw.reynasuckoursouls,R.raw.uforgetimakillr,R.raw.wewillrevealsecret
 
     };
 
