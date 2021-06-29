@@ -50,16 +50,22 @@ public class Tab1 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab1
     public String[] items ={
-            "Astra", "Breach", "Brimstone", "Cypher","Jett",
-            "KAY/O", "Killjoy","Omen", "Phoenix", "Raze",
-            "Reyna", "Sage", "Skye", "Sova", "Viper"
+            "Abomination","Alright alright","Clear them all","Concealment",
+            "Congratulations","Foolo","Higher plane","Idiot","Knocking them",
+            "Mmmhmmhmm","Na na","Out of stars","Place stars","Prove yourself",
+            "Pulling them in!","Raze ma Queen","recovering it","Take down the boomer",
+            "The end","Too close!","Too easy","Too stupid","We are strong","World divided!",
+            "You are divided!"
     };
 
     // Here you can change the mp3 files of the buttons in Tab1
     public static int[] soundfiles ={
-            R.raw.bee, R.raw.parrot, R.raw.cat, R.raw.dog, R.raw.elephant,
-            R.raw.horse, R.raw.lion, R.raw.mosquito, R.raw.pig ,R.raw.rooster,R.raw.mouse,R.raw.dino,
-            R.raw.examplesound, R.raw.examplesound, R.raw.examplesound, R.raw.examplesound, R.raw.examplesound
+            R.raw.abomination,R.raw.alrightalright,R.raw.clearthemall,
+            R.raw.concealment,R.raw.congratulations,R.raw.foolo,R.raw.higherplane,
+            R.raw.idiot,R.raw.knockingthem,R.raw.mhm,R.raw.nana,R.raw.outofstars,
+            R.raw.playstars,R.raw.proveyourself,R.raw.pullingthemin,R.raw.razemaqueen,
+            R.raw.recoveringit,R.raw.takedowntheboomer,R.raw.theend,R.raw.tooclose,R.raw.tooeasy,
+            R.raw.toostupid,R.raw.wearestrong,R.raw.worlddivided,R.raw.youaredivided
 
     };
 
