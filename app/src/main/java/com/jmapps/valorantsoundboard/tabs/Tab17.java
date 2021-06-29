@@ -62,15 +62,15 @@ public class Tab17 extends Fragment {
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.classicTap,R.raw.classicReload,R.raw.shortyTap,R.raw.shortyReload,
-            R.raw.frenzyTap,R.raw.frenzySpray,R.raw.frenzyReload,R.raw.ghostTap,R.raw.ghostReload,
-            R.raw.sheriffTap,R.raw.sheriffReload,R.raw.stingerTap,R.raw.stingerSpray,R.raw.stingerReload,
-            R.raw.spectreTap,R.raw.spectreSpray,R.raw.spectreReload,R.raw.buckyTap,R.raw.buckyReload,
-            R.raw.judgeTap,R.raw.judgeReload,R.raw.bulldogTap,R.raw.bulldogSpray,R.raw.bulldogReload,
-            R.raw.guardianTap,R.raw.guardianReload,R.raw.phantomTap,R.raw.phantomSpray,R.raw.phantomReload,
-            R.raw.vandalTap,R.raw.vandalSpray,R.raw.vandalReload,R.raw.marshalTap,R.raw.marshalReload,
-            R.raw.operatorTap,R.raw.operatorReload,R.raw.aresTap,R.raw.aresSpray,R.raw.aresReload,
-            R.raw.odinTap,R.raw.odinSpray,R.raw.odinReload
+            R.raw.classictap,R.raw.classicreload,R.raw.shortytap,R.raw.shortyreload,
+            R.raw.frenzytap,R.raw.frenzyspray,R.raw.frenzyreload,R.raw.ghosttap,R.raw.ghostreload,
+            R.raw.sherifftap,R.raw.sheriffreload,R.raw.stingertap,R.raw.stingerspray,R.raw.stingerreload,
+            R.raw.spectretap,R.raw.spectrespray,R.raw.spectrereload,R.raw.buckytap,R.raw.buckyreload,
+            R.raw.judgetap,R.raw.judgereload,R.raw.bulldogtap,R.raw.bulldogspray,R.raw.bulldogreload,
+            R.raw.guardiantap,R.raw.guardianreload,R.raw.phantomtap,R.raw.phantomspray,R.raw.phantomreload,
+            R.raw.vandaltap,R.raw.vandalspray,R.raw.vandalreload,R.raw.marshaltap,R.raw.marshalreload,
+            R.raw.operatortap,R.raw.operatorreload,R.raw.arestap,R.raw.aresspray,R.raw.aresreload,
+            R.raw.odintap,R.raw.odinspray,R.raw.odinreload
     };
 
 
