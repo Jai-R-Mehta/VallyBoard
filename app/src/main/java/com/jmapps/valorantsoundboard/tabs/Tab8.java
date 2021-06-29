@@ -50,16 +50,22 @@ public class Tab8 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "A mistake","Another of me","Behind you","Boo!","Cry for",
+            "Dead fools","Fear blinds them","Fool","I am everywhere",
+            "Just human","Keep your focus","Kick them","Blinding",
+            "Rest now","Scatter!","Shadows travelling","Snuff them out",
+            "They don't know","Their nightmare","They are weak","This nightmare",
+            "Thought you were safe","Truly afraid","You think you can kill me"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.amistake,R.raw.anotherofme,R.raw.behindyou,R.raw.boo,
+            R.raw.cryfor,R.raw.deadfools,R.raw.fearblindsthem,R.raw.fool,
+            R.raw.iameverywhere,R.raw.justhuman,R.raw.keepyourfocus,R.raw.kickthem,
+            R.raw.oblinding,R.raw.restnow,R.raw.scatter,R.raw.shadowstravelling,
+            R.raw.snuffthemout,R.raw.thedontknow,R.raw.theirnightmare,R.raw.theyareweak,
+            R.raw.thisnightmare,R.raw.thoughtyouweresafe,R.raw.trulyafraid,R.raw.youthinkyoucankillme
 
     };
 
