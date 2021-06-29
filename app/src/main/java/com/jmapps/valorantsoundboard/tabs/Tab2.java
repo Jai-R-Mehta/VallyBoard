@@ -49,16 +49,16 @@ public class Tab2 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab2
     public String[] items ={
-            "Baby","Heart Beat","Laugh","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Adrenaline","A second breach","Blasting","Blinding","Concussing","Every damn time",
+            "Fire in your eyes","Flash out","Hell yeah","Left my arms at home","Lets goo!",
+            "Off your feet!","So secure","'Thak thak'","Tremor","What hit 'em","Worthless"
     };
 
     // Here you can change the mp3 files of the buttons in Tab2
     public static int[] soundfiles ={
-            R.raw.thak_thak,R.raw.heartbeating,R.raw.laughing,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound, R.raw.examplesound
+            R.raw.adrenaline,R.raw.asecondbreach,R.raw.blasting,R.raw.blinding,R.raw.concussing,
+            R.raw.everydamntime,R.raw.fireinyoureyes,R.raw.flashout,R.raw.hellyeah,R.raw.leftmyarmsathome,
+            R.raw.letsgoo,R.raw.offyourfeet,R.raw.sosecure,R.raw.thak_thak,R.raw.tremor,R.raw.whathitem,R.raw.worthless
     };
 
 
