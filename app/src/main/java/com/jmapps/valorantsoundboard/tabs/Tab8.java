@@ -1,5 +1,5 @@
 package com.jmapps.valorantsoundboard.tabs;
-
+//omen
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -55,7 +55,7 @@ public class Tab8 extends Fragment {
             "Just human","Keep your focus","Kick them","Blinding",
             "Rest now","Scatter!","Shadows travelling","Snuff them out",
             "They don't know","Their nightmare","They are weak","This nightmare",
-            "Thought you were safe","Truly afraid","You think you can kill me"
+            "Thought you were safe","Truly afraid","Block it out omen"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
