@@ -50,17 +50,20 @@ public class Tab5 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Clone killed","Dumb faces","Easy","Embarrassing","Get out of my way!",
+            "Idiots","Cool, lets go","Little s***","Mix things up","No way!",
+            "Our home","Screw up","Show me where to go","Sorry","Super quiet",
+            "They are desperate","They asleep?","They tried","This is nothing",
+            "Watch this!","You guys suck"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-
+            R.raw.clonekilled,R.raw.dumbfaces,R.raw.easy,R.raw.embarassing,R.raw.getoutofmyway,
+            R.raw.idiots,R.raw.instalock,R.raw.littleshit,R.raw.mixthingsup,R.raw.noway,
+            R.raw.ourhome,R.raw.screwup,R.raw.showmewheretogo,R.raw.sorry,R.raw.superquiet,
+            R.raw.theyaredesperate,R.raw.theyasleep,R.raw.theytried,R.raw.thisisnothing,R.raw.watchthis,
+            R.raw.youguyssuck
     };
 
 

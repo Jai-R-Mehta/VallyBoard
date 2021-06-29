@@ -50,17 +50,27 @@ public class Tab17 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Classic Tap","Classic Reload","Shorty tap","Shorty reload","Frenzy Tap",
+            "Frenzy Spray","Frenzy Reload","Ghost Tap","Ghost reload","Sheriff Tap",
+            "Sheriff Reload","Stinger Tap","Stringer Spray","Stinger Reload","Spectre Tap",
+            "Spectre Spray","Spectre Reload","Bucky tap","Bucky reload","Judge tap","Judge reload",
+            "Bulldog tap", "Bulldog spray", "Bulldog reload","Guardian tap","Guardian reload",
+            "Phantom tap","Phantom Spray", "Phantom reload","Vandal Tap","Vandal Spray",
+            "Vandal Reload","Marshal tap","marshal reload","Operator tap","Operator reload",
+            "Ares tap","Ares spray","Ares reload","Odin tap","Odin spray","Odin reload"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-
+            R.raw.classicTap,R.raw.classicReload,R.raw.shortyTap,R.raw.shortyReload,
+            R.raw.frenzyTap,R.raw.frenzySpray,R.raw.frenzyReload,R.raw.ghostTap,R.raw.ghostReload,
+            R.raw.sheriffTap,R.raw.sheriffReload,R.raw.stingerTap,R.raw.stingerSpray,R.raw.stingerReload,
+            R.raw.spectreTap,R.raw.spectreSpray,R.raw.spectreReload,R.raw.buckyTap,R.raw.buckyReload,
+            R.raw.judgeTap,R.raw.judgeReload,R.raw.bulldogTap,R.raw.bulldogSpray,R.raw.bulldogReload,
+            R.raw.guardianTap,R.raw.guardianReload,R.raw.phantomTap,R.raw.phantomSpray,R.raw.phantomReload,
+            R.raw.vandalTap,R.raw.vandalSpray,R.raw.vandalReload,R.raw.marshalTap,R.raw.marshalReload,
+            R.raw.operatorTap,R.raw.operatorReload,R.raw.aresTap,R.raw.aresSpray,R.raw.aresReload,
+            R.raw.odinTap,R.raw.odinSpray,R.raw.odinReload
     };
 
 
