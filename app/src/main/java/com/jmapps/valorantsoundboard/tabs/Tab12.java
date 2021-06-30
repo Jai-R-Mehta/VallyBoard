@@ -50,16 +50,22 @@ public class Tab12 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "How annoying","Ask for aid","As one","Barrier created","continue to win","Death can't stop me",
+            "Do everything","Duty is not over!","Healing you","Impostor killed","March through","my gift",
+            "Not just your healer","Shall not kill my allies!","return to dust","*sigh*","Need healing","Sorry",
+            "Shield and sword","Shoulder fountain","Single battle","Stand down","With fire","together",
+            "Wonderful","We are fighters"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.annoyinghealing,R.raw.askforaid,R.raw.asone,R.raw.barriercreated,
+            R.raw.continuetowin,R.raw.deathcantstopme,R.raw.doeverything,R.raw.dutyisnotover,
+            R.raw.healingyou,R.raw.impostorkilled,R.raw.marchthrough,R.raw.mygift,
+            R.raw.notjustyourhealer,R.raw.notkillmyallies,R.raw.returntodust,R.raw.sageahh,
+            R.raw.sageneedshealing,R.raw.sagesorry,R.raw.shieldnsword,R.raw.shoulderfountain,
+            R.raw.singlebattle,R.raw.standdown,R.raw.swithfire,R.raw.together,
+            R.raw.wanderful,R.raw.wearefighters
 
     };
 
