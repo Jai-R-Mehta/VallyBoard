@@ -50,17 +50,26 @@ public class Tab9 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "all I need","ay i like this game","better keep up","bunch of guys here","burn you up phoenix",
+            "cheeky","cheers","common bruv","common lets go","embarrassing",
+            "feeling myself","you get that on cam?","how the boss does it","the best","jokes over",
+            "knock em down","lets make this quick","nicee","there can only be one","outshine their radiance",
+            "hahaha","thought you put up a fight?","really","relax","they should stop trying",
+            "skrrah","sorry mate","tell me you caught that","twitchy here","you aint coming back",
+            "you go girl","think you can kill me","want me serious","wassup","what you doin",
+            "who's this other phoenix ","you can do that too?","yo Sova"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-
+            R.raw.allineed,R.raw.ayyyilikethisgame,R.raw.betterkeepup,R.raw.bunchofguyshere,R.raw.burnuupphnx,
+            R.raw.cheaky,R.raw.cheers,R.raw.commonbruv,R.raw.commonlesgo,R.raw.embarassingphnx,
+            R.raw.feelingmyself,R.raw.getthatoncam,R.raw.howthebossdoesit,R.raw.isaidit,R.raw.jokesover,
+            R.raw.knockemdown,R.raw.letsmakethisquick,R.raw.nice,R.raw.onlyonehero,R.raw.outshinetheirradiance,
+            R.raw.phnxhahaha,R.raw.putupafight,R.raw.rlly,R.raw.relax,R.raw.shouldstoptrying,
+            R.raw.skrrrah,R.raw.sorrymate,R.raw.tellmeucaughtthat,R.raw.twitchyhere,R.raw.uaintcomingback,
+            R.raw.ugogirl,R.raw.uthinkucankillme,R.raw.wantmeserious,R.raw.wassup,R.raw.whatudoin,
+            R.raw.whosthosotherphnx,R.raw.yooucandothattoo,R.raw.yosova
     };
 
 
