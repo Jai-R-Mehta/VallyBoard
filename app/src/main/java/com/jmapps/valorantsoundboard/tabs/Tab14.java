@@ -50,16 +50,22 @@ public class Tab14 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Bullseye","Concentrate Sova","Come into the unknown","Deploying Drone",
+            "Determined to die","do not hunt the hunter","find their weakness","I am the hunter!","im not tired",
+            "i will find them","hello","level heads","quiver is never full","never give up",
+            "nice shot","no one escapes","not just an archer","nowhere to run","protect homeland",
+            "revealing area","rush them","shockdart","take out healer","there they are",
+            "wind in our favour","they demand a fight","they tire","worth celebrating","u will have intel"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.bulleyes,R.raw.concentratesova,R.raw.cumintounkown,R.raw.deployingdrone,R.raw.determinedtodie,
+            R.raw.donothunt,R.raw.findtheirweakness,R.raw.iamthehunter,R.raw.imnottired,R.raw.iwillfindthem,
+            R.raw.khelo,R.raw.levelheads,R.raw.myquiverisneverfull,R.raw.nevergiveup,R.raw.niceshot,
+            R.raw.nooneescapessight,R.raw.notjustarcher,R.raw.nowheretorun,R.raw.protectourhomeland,R.raw.revealingarea,
+            R.raw.rushthem,R.raw.shockdart,R.raw.takeouttheirhealer,R.raw.theretheyare,R.raw.thewindsshiftinourfavour,
+            R.raw.theydemandafight,R.raw.theytirewedont,R.raw.thisworthcelecbrating,R.raw.ullhaveurintel
 
     };
 
