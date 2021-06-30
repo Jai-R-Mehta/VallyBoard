@@ -50,7 +50,7 @@ public class Tab9 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "all I need","ay i like this game","better keep up","bunch of guys here","burn you up phoenix",
+            "all I need","ay i like this game","better keep up","bunch of guys here","burn you up phoenix","Kaching",
             "cheeky","cheers","common bruv","common lets go","embarrassing",
             "feeling myself","you get that on cam?","how the boss does it","the best","jokes over",
             "knock em down","lets make this quick","nicee","there can only be one","outshine their radiance",
@@ -62,7 +62,7 @@ public class Tab9 extends Fragment {
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.allineed,R.raw.ayyyilikethisgame,R.raw.betterkeepup,R.raw.bunchofguyshere,R.raw.burnuupphnx,
+            R.raw.allineed,R.raw.ayyyilikethisgame,R.raw.betterkeepup,R.raw.bunchofguyshere,R.raw.burnuupphnx,R.raw.buystuff,
             R.raw.cheaky,R.raw.cheers,R.raw.commonbruv,R.raw.commonlesgo,R.raw.embarassingphnx,
             R.raw.feelingmyself,R.raw.getthatoncam,R.raw.howthebossdoesit,R.raw.isaidit,R.raw.jokesover,
             R.raw.knockemdown,R.raw.letsmakethisquick,R.raw.nice,R.raw.onlyonehero,R.raw.outshinetheirradiance,
