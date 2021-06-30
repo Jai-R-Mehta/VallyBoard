@@ -50,16 +50,21 @@ public class Tab7 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Ale-oop","Defense matrix","Deleted","Don't overthink it","Field-test",
+            "Finally a challenge","Found them","Imagine","initiating","Killed my bot",
+            "Kindergarten","Legs to the spike","My inventions","Really","Recalling my bot",
+            "Smarter one","Sorted everything","Swarm grenade","Tactics beat firepower",
+            "Tech-support","Turret down","Turret out","You should run"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.aleop,R.raw.defensematrix,R.raw.deleted,R.raw.dontoverthink,
+            R.raw.fieldtest,R.raw.finallyachallenge,R.raw.foundthem,R.raw.imagine,
+            R.raw.initiating,R.raw.killedmybot,R.raw.kindergarten,R.raw.legstothespike,
+            R.raw.myinventions,R.raw.really,R.raw.recallingbot,R.raw.smarterone,
+            R.raw.sortedeverything,R.raw.swarmgrenade,R.raw.tacticsbeatfirepower,R.raw.techsupport,
+            R.raw.turrertdown,R.raw.turretout,R.raw.youshouldrun
 
     };
 
