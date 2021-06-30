@@ -50,16 +50,22 @@ public class Tab13 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Around here","Bloinded","Cheers mate","Clean slate",
+            "Don't give em ground","Do these fellas good","Good day","Good on ya",
+            "Got your trail","Hawk out","Healing over here!","I'm no doctor",
+            "Low morale","Mobilize my pack","Piss off","Remember everyone",
+            "Seek them out!","Sleep tight","They concussed","Time to hunt",
+            "That was insane","Two of us","Find the weak point","Working with humans"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.aroundhere,R.raw.bloinded,R.raw.cheersmate,R.raw.cleanslate,
+            R.raw.dontgiveemground,R.raw.dothesefellasgood,R.raw.gooday,R.raw.goodonya,
+            R.raw.gotyourtrail,R.raw.hawkout,R.raw.healingohere,R.raw.imnodoctor,
+            R.raw.lowmorale,R.raw.mobilizemypack,R.raw.pissoff,R.raw.remembereveryone,
+            R.raw.seekthemout,R.raw.sleeptight,R.raw.stheyconcussed,R.raw.stimetohunt,
+            R.raw.thatwasinsane,R.raw.twoofus,R.raw.weakpointnbreakit,R.raw.workingwithhumans
 
     };
 
