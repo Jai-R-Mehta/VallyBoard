@@ -50,16 +50,17 @@ public class Tab6 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Aim-bot","Badass","Been warned","Best you got","Can opener","Capable fighter",
+            "Fight bots","Game over","My crew","No one walks away","No rest required","Pointless",
+            "Powerless","Software update","Systems restored","That was cold","Trash"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.aimbot,R.raw.badass,R.raw.beenwarned,R.raw.bestyougot,R.raw.canopener,
+            R.raw.capablefighter,R.raw.fightbots,R.raw.gameover,R.raw.mycrew,R.raw.noonewalksaway,
+            R.raw.norestrequired,R.raw.pointless,R.raw.powerless,R.raw.softwareupdate,R.raw.systemsrestored,
+            R.raw.thatwascold,R.raw.trash
 
     };
 
