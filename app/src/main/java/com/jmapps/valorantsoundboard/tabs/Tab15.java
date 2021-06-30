@@ -50,16 +50,21 @@ public class Tab15 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "almost broke a sweat","annoying fly","breathe deep","burn them phoenix","choked on your own poison",
+            "do it yourself","don't get in my way","exterminated","hide the bodies","hopeless mice",
+            "idiots","ill take everything from them","im impressed","loose homeland","make them beg",
+            "pathetic","poor things","poison orb","pull them under","shhhhh",
+            "sh** sh** common","squashed","you wanted a villain","welcome to my world"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.almostbrokeasweat,R.raw.annoyingfly,R.raw.breathedeep,R.raw.burnthemphnx,R.raw.chockedonurownposion,
+            R.raw.doiturelf,R.raw.dontgetinmyway,R.raw.exterminated,R.raw.hidethebodies,R.raw.hopelessmice,
+            R.raw.idts,R.raw.illtakeeverything,R.raw.imimpressed,R.raw.looshomeagain,R.raw.makethembeg,
+            R.raw.pathetic,R.raw.poorthings,R.raw.posionorb,R.raw.pullingthemin,R.raw.shhhhh,R.raw.shishicmmn,
+            R.raw.squashed,R.raw.uwantedavillian,R.raw.welcometomywrl
+
 
     };
 
