@@ -50,16 +50,19 @@ public class Tab11 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Insane Laugh","Ahhh","All mine","Cover Run!","Croissant?","Don't die easily","Don't rush me",
+            "For you","Heart racing","Hola","Hunt begins","Impressive","Just like everyone","Kill her",
+            "Meaningless","More more!","Pathetic","Peak-a-boo","Stealing sight","Still hungry","Their place",
+            "They will cover","We win, we survive","You are nothing"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.acelaugh,R.raw.ahhhh,R.raw.allmine,R.raw.coverrun,R.raw.crossaint,
+            R.raw.dontdieeasily,R.raw.dontrushme,R.raw.foryou,R.raw.heartsracing,
+            R.raw.hola,R.raw.huntbegins,R.raw.impressive,R.raw.justlikeeveryone,R.raw.killher,
+            R.raw.meaningless,R.raw.moremore,R.raw.patheticc,R.raw.peakaboo,R.raw.stealingsight,
+            R.raw.stillhungry,R.raw.theirplace,R.raw.theywillcover,R.raw.wewinwesurvive,R.raw.youarenothing
 
     };
 
