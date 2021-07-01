@@ -50,16 +50,21 @@ public class Tab16 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Arrow Hit","Car","Firework","Glass Breaking","Piano",
-            "Spooky Wind","(Add more)","(Add more)","(Add more)","(Add more)",
-            "(Add more)","(Add more)","(Add more)","(Add more)","(Add more)"
+            "Too easy","Decoy","Decoy destroyed","Ill handle this!","Jump 'em",
+            "Kill a god","Kuso","Last yoru","Lets flank them","Looking for me?",
+            "Pissed me off","Portal broke","Portal closed","Shut up","Surprise",
+            "Take out the trash","That's me","They are tough","Time to jump",
+            "*groan*","When they not looking","Who is next?"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.arrowhit,R.raw.car,R.raw.firework,R.raw.glassbreaking,R.raw.piano,
-            R.raw.spookywind,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
-            R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,R.raw.examplesound,
+            R.raw.btooeasy,R.raw.decoy,R.raw.decoydestroyed,R.raw.illhandlethis,
+            R.raw.jumpem,R.raw.killagod,R.raw.kusooo,R.raw.lastyoru,
+            R.raw.letsflankthem,R.raw.lookinforme,R.raw.pissedmeoff,R.raw.portalbroke,
+            R.raw.portalclosed,R.raw.shutup,R.raw.surprise,R.raw.takeoutthetrash,R.raw.thatsme,
+            R.raw.theyaretough,R.raw.timetojump,R.raw.tpgroan,R.raw.whentheynotlookin,
+            R.raw.whoisnext
 
     };
 

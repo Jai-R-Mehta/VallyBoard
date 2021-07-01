@@ -69,7 +69,7 @@ public class Tab10 extends Fragment {
             R.raw.loveexplosions,R.raw.malfunctined,R.raw.milzamoriz,R.raw.misfamilia,R.raw.moneybaby,
             R.raw.neverhaddoubt,R.raw.obliterated,R.raw.olajett,R.raw.outwithabang,R.raw.partyisover,
             R.raw.partyjustbegun,R.raw.pickthemapart,R.raw.salvadoor,R.raw.satchelout,R.raw.senduoffbang,
-            R.raw.sisterfrommister,R.raw.squadzinio,R.raw.surprise,R.raw.takeanap,R.raw.thatrazesuclks,
+            R.raw.sisterfrommister,R.raw.squadzinio,R.raw.rsurprise,R.raw.takeanap,R.raw.thatrazesuclks,
             R.raw.watchus,R.raw.whatimiss,R.raw.wouldntfightback
 
     };
