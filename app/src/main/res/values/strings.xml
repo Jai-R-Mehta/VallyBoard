@@ -5,9 +5,9 @@
 
 
     <!--Ad-->
-    <string name="Ad_unit_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Ad_unit_id">ca-app-pub-9439460905977509~5935001466</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9439460905977509/9348111795</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-9439460905977509/5053643561</string>
     <string name="interstitial_ad_frequency">3</string>
 
 
