@@ -59,8 +59,8 @@ public class Tab5 extends Fragment {
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.clonekilled,R.raw.dumbfaces,R.raw.easy,R.raw.embarassingphnx,R.raw.getoutofmyway,
-            R.raw.idts,R.raw.instalock,R.raw.littleshit,R.raw.mixthingsup,R.raw.noway,
+            R.raw.clonekilled,R.raw.dumbfaces,R.raw.easy,R.raw.embarassing,R.raw.getoutofmyway,
+            R.raw.idiots,R.raw.instalock,R.raw.littleshit,R.raw.mixthingsup,R.raw.noway,
             R.raw.ourhome,R.raw.screwup,R.raw.showmewheretogo,R.raw.sorry,R.raw.superquiet,
             R.raw.theyaredesperate,R.raw.theyasleep,R.raw.theytried,R.raw.thisisnothing,R.raw.watchthis,
             R.raw.youguyssuck
