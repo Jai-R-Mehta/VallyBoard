@@ -52,7 +52,9 @@ public class Tab17 extends Fragment {
     public String[] items ={
             "Classic Tap","Classic Reload","Shorty tap","Shorty reload","Frenzy Tap",
             "Frenzy Spray","Frenzy Reload","Ghost Tap","Ghost reload","Sheriff Tap",
-            "Sheriff Reload","Stinger Tap","Stringer Spray","Stinger Reload","Spectre Tap",
+            "Sheriff Reload",
+            //"Stinger Tap",
+            "Stringer Spray","Stinger Reload","Spectre Tap",
             "Spectre Spray","Spectre Reload","Bucky tap","Bucky reload","Judge tap","Judge reload",
             "Bulldog tap", "Bulldog spray", "Bulldog reload","Guardian tap","Guardian reload",
             "Phantom tap","Phantom Spray", "Phantom reload","Vandal Tap","Vandal Spray",
@@ -64,8 +66,10 @@ public class Tab17 extends Fragment {
     public static int[] soundfiles ={
             R.raw.classictap,R.raw.classicreload,R.raw.shortytap,R.raw.shortyreload,
             R.raw.frenzytap,R.raw.frenzyspray,R.raw.frenzyreload,R.raw.ghosttap,R.raw.ghostreload,
-            R.raw.sherifftap,R.raw.sheriffreload,R.raw.stingertap,R.raw.stingerspray,R.raw.stingerreload,
-            R.raw.spectretap,R.raw.spectrespray,R.raw.spectrereload,R.raw.buckytap,R.raw.buckyreload,
+            R.raw.sherifftap,R.raw.sheriffreload,
+            //R.raw.stingertap,
+            R.raw.stingerspray,R.raw.stingerreload,R.raw.spectretap,
+            R.raw.spectrespray,R.raw.spectrereload,R.raw.buckytap,R.raw.buckyreload,
             R.raw.judgetap,R.raw.judgereload,R.raw.bulldogtap,R.raw.bulldogspray,R.raw.bulldogreload,
             R.raw.guardiantap,R.raw.guardianreload,R.raw.phantomtap,R.raw.phantomspray,R.raw.phantomreload,
             R.raw.vandaltap,R.raw.vandalspray,R.raw.vandalreload,R.raw.marshaltap,R.raw.marshalreload,
