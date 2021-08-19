@@ -31,7 +31,7 @@
     <string name="tab17">Guns</string>
 
     <!--Share app-->
-    <string name="playstore_link">-PUT THE LINK TO YOUR APP HERE-</string>
+    <string name="playstore_link">-https://play.google.com/store/apps/details?id=com.jmapps.valorantsoundboard-</string>
     <string name="share_text">Get the</string>
     <string name="share_via">Share via...</string>
 
