@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//yoru
+package com.jmapps.soundboardforvalorant.tabs;
+//sova
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab16 extends Fragment {
+public class Tab14 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,23 +50,25 @@ public class Tab16 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Too easy","Decoy","Decoy destroyed","Ill handle this!","Jump 'em",
-            "Kill a god","Kuso","Last yoru","Lets flank them","Looking for me?",
-            "Pissed me off","Portal broke","Portal closed","Shut up","Surprise",
-            "Take out the trash","That's me","They are tough","Time to jump",
-            "*groan*","When they not looking","Who is next?"
+            "Bullseye","Concentrate Sova","Come into the unknown","Deploying Drone",
+            "Determined to die","do not hunt the hunter","find their weakness","I am the hunter!","im not tired",
+            "i will find them","hello","level heads","quiver is never full","never give up",
+            "nice shot","no one escapes","not just an archer","nowhere to run","protect homeland",
+            "revealing area","rush them","shockdart","take out healer","there they are",
+            "wind in our favour","they demand a fight","they tire","worth celebrating","u will have intel"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.btooeasy,R.raw.decoy,R.raw.decoydestroyed,R.raw.illhandlethis,
-            R.raw.jumpem,R.raw.killagod,R.raw.kusooo,R.raw.lastyoru,
-            R.raw.letsflankthem,R.raw.lookinforme,R.raw.pissedmeoff,R.raw.portalbroke,
-            R.raw.portalclosed,R.raw.shutup,R.raw.surprise,R.raw.takeoutthetrash,R.raw.thatsme,
-            R.raw.theyaretough,R.raw.timetojump,R.raw.tpgroan,R.raw.whentheynotlookin,
-            R.raw.whoisnext
+            R.raw.bulleyes,R.raw.concentratesova,R.raw.cumintounkown,R.raw.deployingdrone,R.raw.determinedtodie,
+            R.raw.donothunt,R.raw.findtheirweakness,R.raw.iamthehunter,R.raw.imnottired,R.raw.iwillfindthem,
+            R.raw.khelo,R.raw.levelheads,R.raw.myquiverisneverfull,R.raw.nevergiveup,R.raw.niceshot,
+            R.raw.nooneescapessight,R.raw.notjustarcher,R.raw.nowheretorun,R.raw.protectourhomeland,R.raw.revealingarea,
+            R.raw.rushthem,R.raw.shockdart,R.raw.takeouttheirhealer,R.raw.theretheyare,R.raw.thewindsshiftinourfavour,
+            R.raw.theydemandafight,R.raw.theytirewedont,R.raw.thisworthcelecbrating,R.raw.ullhaveurintel
 
     };
+
 
 
 
@@ -74,14 +76,14 @@ public class Tab16 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab16_layout,container,false);
-        layout=rootView.findViewById(R.id.tab16);
+        View rootView=inflater.inflate(R.layout.tab14_layout,container,false);
+        layout=rootView.findViewById(R.id.tab14);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabSixteenGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabFourteenGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -174,7 +176,7 @@ public class Tab16 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabSixteenItemClicked(position);
+                        ((MainActivity) context).TabFourteenItemClicked(position);
                     }
                 }
             });

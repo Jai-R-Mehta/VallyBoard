@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//sage
+package com.jmapps.soundboardforvalorant.tabs;
+//KAYO
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab12 extends Fragment {
+public class Tab6 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,22 +50,17 @@ public class Tab12 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "How annoying","Ask for aid","As one","Barrier created","continue to win","Death can't stop me",
-            "Do everything","Duty is not over!","Healing you","Impostor killed","March through","my gift",
-            "Not just your healer","Shall not kill my allies!","return to dust","*sigh*","Need healing","Sorry",
-            "Shield and sword","Shoulder fountain","Single battle","Stand down","With fire","together",
-            "Wonderful","We are fighters"
+            "Aim-bot","Badass","Been warned","Best you got","Can opener","Capable fighter",
+            "Fight bots","Game over","My crew","No one walks away","No rest required","Pointless",
+            "Powerless","Software update","Systems restored","That was cold","Trash"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.annoyinghealing,R.raw.askforaid,R.raw.asone,R.raw.barriercreated,
-            R.raw.continuetowin,R.raw.deathcantstopme,R.raw.doeverything,R.raw.dutyisnotover,
-            R.raw.healingyou,R.raw.impostorkilled,R.raw.marchthrough,R.raw.mygift,
-            R.raw.notjustyourhealer,R.raw.notkillmyallies,R.raw.returntodust,R.raw.sageahh,
-            R.raw.sageneedshealing,R.raw.sagesorry,R.raw.shieldnsword,R.raw.shoulderfountain,
-            R.raw.singlebattle,R.raw.standdown,R.raw.swithfire,R.raw.together,
-            R.raw.wanderful,R.raw.wearefighters
+            R.raw.aimbot,R.raw.badass,R.raw.beenwarned,R.raw.bestyougot,R.raw.canopener,
+            R.raw.capablefighter,R.raw.fightbots,R.raw.gameover,R.raw.mycrew,R.raw.noonewalksaway,
+            R.raw.norestrequired,R.raw.pointless,R.raw.powerless,R.raw.softwareupdate,R.raw.systemsrestored,
+            R.raw.thatwascold,R.raw.trash
 
     };
 
@@ -76,14 +71,14 @@ public class Tab12 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab12_layout,container,false);
-        layout=rootView.findViewById(R.id.tab12);
+        View rootView=inflater.inflate(R.layout.tab6_layout,container,false);
+        layout=rootView.findViewById(R.id.tab6);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabTwelveGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabSixGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -176,7 +171,7 @@ public class Tab12 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabTwelveItemClicked(position);
+                        ((MainActivity) context).TabSixItemClicked(position);
                     }
                 }
             });

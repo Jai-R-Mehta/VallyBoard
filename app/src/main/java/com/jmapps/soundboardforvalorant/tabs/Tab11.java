@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//skye
+package com.jmapps.soundboardforvalorant.tabs;
+//reyna
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab13 extends Fragment {
+public class Tab11 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,22 +50,19 @@ public class Tab13 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Around here","Bloinded","Cheers mate","Clean slate",
-            "Don't give em ground","Do these fellas good","Good day","Good on ya",
-            "Got your trail","Hawk out","Healing over here!","I'm no doctor",
-            "Low morale","Mobilize my pack","Piss off","Remember everyone",
-            "Seek them out!","Sleep tight","They concussed","Time to hunt",
-            "That was insane","Two of us","Find the weak point","Working with humans"
+            "Insane Laugh","Ahhh","All mine","Cover Run!","Croissant?","Don't die easily","Don't rush me",
+            "For you","Heart racing","Hola","Hunt begins","Impressive","Just like everyone","Kill her",
+            "Meaningless","More more!","Pathetic","Peak-a-boo","Stealing sight","Still hungry","Their place",
+            "They will cover","We win, we survive","You are nothing"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.aroundhere,R.raw.bloinded,R.raw.cheersmate,R.raw.cleanslate,
-            R.raw.dontgiveemground,R.raw.dothesefellasgood,R.raw.gooday,R.raw.goodonya,
-            R.raw.gotyourtrail,R.raw.hawkout,R.raw.healingohere,R.raw.imnodoctor,
-            R.raw.lowmorale,R.raw.mobilizemypack,R.raw.pissoff,R.raw.remembereveryone,
-            R.raw.seekthemout,R.raw.sleeptight,R.raw.stheyconcussed,R.raw.stimetohunt,
-            R.raw.thatwasinsane,R.raw.twoofus,R.raw.weakpointnbreakit,R.raw.workingwithhumans
+            R.raw.acelaugh,R.raw.ahhhh,R.raw.allmine,R.raw.coverrun,R.raw.crossaint,
+            R.raw.dontdieeasily,R.raw.dontrushme,R.raw.foryou,R.raw.heartsracing,
+            R.raw.hola,R.raw.huntbegins,R.raw.impressive,R.raw.justlikeeveryone,R.raw.killher,
+            R.raw.meaningless,R.raw.moremore,R.raw.patheticc,R.raw.peakaboo,R.raw.stealingsight,
+            R.raw.stillhungry,R.raw.theirplace,R.raw.theywillcover,R.raw.wewinwesurvive,R.raw.youarenothing
 
     };
 
@@ -76,14 +73,14 @@ public class Tab13 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab13_layout,container,false);
-        layout=rootView.findViewById(R.id.tab13);
+        View rootView=inflater.inflate(R.layout.tab11_layout,container,false);
+        layout=rootView.findViewById(R.id.tab11);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabThirteenGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabElevenGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -176,7 +173,7 @@ public class Tab13 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabThirteenItemClicked(position);
+                        ((MainActivity) context).TabElevenItemClicked(position);
                     }
                 }
             });

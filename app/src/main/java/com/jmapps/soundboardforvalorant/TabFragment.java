@@ -1,4 +1,4 @@
-package com.jmapps.valorantsoundboard;
+package com.jmapps.soundboardforvalorant;
 
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -14,23 +14,23 @@ import android.view.ViewGroup;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.jmapps.valorantsoundboard.tabs.Tab1;
-import com.jmapps.valorantsoundboard.tabs.Tab10;
-import com.jmapps.valorantsoundboard.tabs.Tab11;
-import com.jmapps.valorantsoundboard.tabs.Tab12;
-import com.jmapps.valorantsoundboard.tabs.Tab13;
-import com.jmapps.valorantsoundboard.tabs.Tab14;
-import com.jmapps.valorantsoundboard.tabs.Tab15;
-import com.jmapps.valorantsoundboard.tabs.Tab16;
-import com.jmapps.valorantsoundboard.tabs.Tab17;
-import com.jmapps.valorantsoundboard.tabs.Tab2;
-import com.jmapps.valorantsoundboard.tabs.Tab3;
-import com.jmapps.valorantsoundboard.tabs.Tab4;
-import com.jmapps.valorantsoundboard.tabs.Tab5;
-import com.jmapps.valorantsoundboard.tabs.Tab6;
-import com.jmapps.valorantsoundboard.tabs.Tab7;
-import com.jmapps.valorantsoundboard.tabs.Tab8;
-import com.jmapps.valorantsoundboard.tabs.Tab9;
+import com.jmapps.soundboardforvalorant.tabs.Tab1;
+import com.jmapps.soundboardforvalorant.tabs.Tab10;
+import com.jmapps.soundboardforvalorant.tabs.Tab11;
+import com.jmapps.soundboardforvalorant.tabs.Tab12;
+import com.jmapps.soundboardforvalorant.tabs.Tab13;
+import com.jmapps.soundboardforvalorant.tabs.Tab14;
+import com.jmapps.soundboardforvalorant.tabs.Tab15;
+import com.jmapps.soundboardforvalorant.tabs.Tab16;
+import com.jmapps.soundboardforvalorant.tabs.Tab17;
+import com.jmapps.soundboardforvalorant.tabs.Tab2;
+import com.jmapps.soundboardforvalorant.tabs.Tab3;
+import com.jmapps.soundboardforvalorant.tabs.Tab4;
+import com.jmapps.soundboardforvalorant.tabs.Tab5;
+import com.jmapps.soundboardforvalorant.tabs.Tab6;
+import com.jmapps.soundboardforvalorant.tabs.Tab7;
+import com.jmapps.soundboardforvalorant.tabs.Tab8;
+import com.jmapps.soundboardforvalorant.tabs.Tab9;
 
 
 public class TabFragment extends Fragment {

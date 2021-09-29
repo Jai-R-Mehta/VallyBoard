@@ -1,4 +1,4 @@
-package com.jmapps.valorantsoundboard;
+package com.jmapps.soundboardforvalorant;
 
 import org.junit.Test;
 

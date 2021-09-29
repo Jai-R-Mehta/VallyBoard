@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//phoenix
+package com.jmapps.soundboardforvalorant.tabs;
+//sage
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab9 extends Fragment {
+public class Tab12 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,26 +50,23 @@ public class Tab9 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "all I need","ay i like this game","better keep up","bunch of guys here","burn you up phoenix","Kaching",
-            "cheeky","cheers","common bruv","common lets go","embarrassing",
-            "feeling myself","you get that on cam?","how the boss does it","the best","jokes over",
-            "knock em down","lets make this quick","nicee","there can only be one","outshine their radiance",
-            "hahaha","thought you put up a fight?","really","relax","they should stop trying",
-            "skrrah","sorry mate","tell me you caught that","twitchy here","you aint coming back",
-            "you go girl","think you can kill me","want me serious","wassup","what you doin",
-            "who's this other phoenix ","you can do that too?","yo Sova"
+            "How annoying","Ask for aid","As one","Barrier created","continue to win","Death can't stop me",
+            "Do everything","Duty is not over!","Healing you","Impostor killed","March through","my gift",
+            "Not just your healer","Shall not kill my allies!","return to dust","*sigh*","Need healing","Sorry",
+            "Shield and sword","Shoulder fountain","Single battle","Stand down","With fire","together",
+            "Wonderful","We are fighters"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.allineed,R.raw.ayyyilikethisgame,R.raw.betterkeepup,R.raw.bunchofguyshere,R.raw.burnuupphnx,R.raw.buystuff,
-            R.raw.cheaky,R.raw.cheers,R.raw.commonbruv,R.raw.commonlesgo,R.raw.embarassingphnx,
-            R.raw.feelingmyself,R.raw.getthatoncam,R.raw.howthebossdoesit,R.raw.isaidit,R.raw.jokesover,
-            R.raw.knockemdown,R.raw.letsmakethisquick,R.raw.nice,R.raw.onlyonehero,R.raw.outshinetheirradiance,
-            R.raw.phnxhahaha,R.raw.putupafight,R.raw.rlly,R.raw.relax,R.raw.shouldstoptrying,
-            R.raw.skrrrah,R.raw.sorrymate,R.raw.tellmeucaughtthat,R.raw.twitchyhere,R.raw.uaintcomingback,
-            R.raw.ugogirl,R.raw.uthinkucankillme,R.raw.wantmeserious,R.raw.wassup,R.raw.whatudoin,
-            R.raw.whosthosotherphnx,R.raw.yooucandothattoo,R.raw.yosova
+            R.raw.annoyinghealing,R.raw.askforaid,R.raw.asone,R.raw.barriercreated,
+            R.raw.continuetowin,R.raw.deathcantstopme,R.raw.doeverything,R.raw.dutyisnotover,
+            R.raw.healingyou,R.raw.impostorkilled,R.raw.marchthrough,R.raw.mygift,
+            R.raw.notjustyourhealer,R.raw.notkillmyallies,R.raw.returntodust,R.raw.sageahh,
+            R.raw.sageneedshealing,R.raw.sagesorry,R.raw.shieldnsword,R.raw.shoulderfountain,
+            R.raw.singlebattle,R.raw.standdown,R.raw.swithfire,R.raw.together,
+            R.raw.wanderful,R.raw.wearefighters
+
     };
 
 
@@ -79,14 +76,14 @@ public class Tab9 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab9_layout,container,false);
-        layout=rootView.findViewById(R.id.tab9);
+        View rootView=inflater.inflate(R.layout.tab12_layout,container,false);
+        layout=rootView.findViewById(R.id.tab12);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabNineGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabTwelveGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -179,7 +176,7 @@ public class Tab9 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabNineItemClicked(position);
+                        ((MainActivity) context).TabTwelveItemClicked(position);
                     }
                 }
             });

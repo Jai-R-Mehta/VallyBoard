@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//Killjoy
+package com.jmapps.soundboardforvalorant.tabs;
+//Jett
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab7 extends Fragment {
+public class Tab5 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,22 +50,20 @@ public class Tab7 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Ale-oop","Defense matrix","Deleted","Don't overthink it","Field-test",
-            "Finally a challenge","Found them","Imagine","initiating","Killed my bot",
-            "Kindergarten","Legs to the spike","My inventions","Really","Recalling my bot",
-            "Smarter one","Sorted everything","Swarm grenade","Tactics beat firepower",
-            "Tech-support","Turret down","Turret out","You should run"
+            "Clone killed","Dumb faces","Easy","Embarrassing","Get out of my way!",
+            "Idiots","Cool, lets go","Little s***","Mix things up","No way!",
+            "Our home","Screw up","Show me where to go","Sorry","Super quiet",
+            "They are desperate","They asleep?","They tried","This is nothing",
+            "Watch this!","You guys suck"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.aleop,R.raw.defensematrix,R.raw.deleted,R.raw.dontoverthink,
-            R.raw.fieldtest,R.raw.finallyachallenge,R.raw.foundthem,R.raw.imagine,
-            R.raw.initiating,R.raw.killedmybot,R.raw.kindergarten,R.raw.legstothespike,
-            R.raw.myinventions,R.raw.really,R.raw.recallingbot,R.raw.smarterone,
-            R.raw.sortedeverything,R.raw.swarmgrenade,R.raw.tacticsbeatfirepower,R.raw.techsupport,
-            R.raw.turrertdown,R.raw.turretout,R.raw.youshouldrun
-
+            R.raw.clonekilled,R.raw.dumbfaces,R.raw.easy,R.raw.embarassing,R.raw.getoutofmyway,
+            R.raw.idiots,R.raw.instalock,R.raw.littleshit,R.raw.mixthingsup,R.raw.noway,
+            R.raw.ourhome,R.raw.screwup,R.raw.showmewheretogo,R.raw.sorry,R.raw.superquiet,
+            R.raw.theyaredesperate,R.raw.theyasleep,R.raw.theytried,R.raw.thisisnothing,R.raw.watchthis,
+            R.raw.youguyssuck
     };
 
 
@@ -75,14 +73,14 @@ public class Tab7 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab7_layout,container,false);
-        layout=rootView.findViewById(R.id.tab7);
+        View rootView=inflater.inflate(R.layout.tab5_layout,container,false);
+        layout=rootView.findViewById(R.id.tab5);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabSevenGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabFiveGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -175,7 +173,7 @@ public class Tab7 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabSevenItemClicked(position);
+                        ((MainActivity) context).TabFiveItemClicked(position);
                     }
                 }
             });

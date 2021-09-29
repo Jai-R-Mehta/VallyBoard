@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//KAYO
+package com.jmapps.soundboardforvalorant.tabs;
+//Killjoy
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab6 extends Fragment {
+public class Tab7 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,17 +50,21 @@ public class Tab6 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Aim-bot","Badass","Been warned","Best you got","Can opener","Capable fighter",
-            "Fight bots","Game over","My crew","No one walks away","No rest required","Pointless",
-            "Powerless","Software update","Systems restored","That was cold","Trash"
+            "Ale-oop","Defense matrix","Deleted","Don't overthink it","Field-test",
+            "Finally a challenge","Found them","Imagine","initiating","Killed my bot",
+            "Kindergarten","Legs to the spike","My inventions","Really","Recalling my bot",
+            "Smarter one","Sorted everything","Swarm grenade","Tactics beat firepower",
+            "Tech-support","Turret down","Turret out","You should run"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.aimbot,R.raw.badass,R.raw.beenwarned,R.raw.bestyougot,R.raw.canopener,
-            R.raw.capablefighter,R.raw.fightbots,R.raw.gameover,R.raw.mycrew,R.raw.noonewalksaway,
-            R.raw.norestrequired,R.raw.pointless,R.raw.powerless,R.raw.softwareupdate,R.raw.systemsrestored,
-            R.raw.thatwascold,R.raw.trash
+            R.raw.aleop,R.raw.defensematrix,R.raw.deleted,R.raw.dontoverthink,
+            R.raw.fieldtest,R.raw.finallyachallenge,R.raw.foundthem,R.raw.imagine,
+            R.raw.initiating,R.raw.killedmybot,R.raw.kindergarten,R.raw.legstothespike,
+            R.raw.myinventions,R.raw.really,R.raw.recallingbot,R.raw.smarterone,
+            R.raw.sortedeverything,R.raw.swarmgrenade,R.raw.tacticsbeatfirepower,R.raw.techsupport,
+            R.raw.turrertdown,R.raw.turretout,R.raw.youshouldrun
 
     };
 
@@ -71,14 +75,14 @@ public class Tab6 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab6_layout,container,false);
-        layout=rootView.findViewById(R.id.tab6);
+        View rootView=inflater.inflate(R.layout.tab7_layout,container,false);
+        layout=rootView.findViewById(R.id.tab7);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabSixGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabSevenGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -171,7 +175,7 @@ public class Tab6 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabSixItemClicked(position);
+                        ((MainActivity) context).TabSevenItemClicked(position);
                     }
                 }
             });

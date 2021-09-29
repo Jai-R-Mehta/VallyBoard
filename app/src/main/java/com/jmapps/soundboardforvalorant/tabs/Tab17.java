@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//Jett
+package com.jmapps.soundboardforvalorant.tabs;
+//weapons
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab5 extends Fragment {
+public class Tab17 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,22 +50,32 @@ public class Tab5 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Clone killed","Dumb faces","Easy","Embarrassing","Get out of my way!",
-            "Idiots","Cool, lets go","Little s***","Mix things up","No way!",
-            "Our home","Screw up","Show me where to go","Sorry","Super quiet",
-            "They are desperate","They asleep?","They tried","This is nothing",
-            "Watch this!","You guys suck"
+            "Classic Tap","Classic Reload","Shorty tap","Shorty reload","Frenzy Tap",
+            "Frenzy Spray","Frenzy Reload","Ghost Tap","Ghost reload","Sheriff Tap",
+            "Sheriff Reload",
+            //"Stinger Tap",
+            "Stringer Spray","Stinger Reload","Spectre Tap",
+            "Spectre Spray","Spectre Reload","Bucky tap","Bucky reload","Judge tap","Judge reload",
+            "Bulldog tap", "Bulldog spray", "Bulldog reload","Guardian tap","Guardian reload",
+            "Phantom tap","Phantom Spray", "Phantom reload","Vandal Tap","Vandal Spray",
+            "Vandal Reload","Marshal tap","marshal reload","Operator tap","Operator reload",
+            "Ares tap","Ares spray","Ares reload","Odin tap","Odin spray","Odin reload"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.clonekilled,R.raw.dumbfaces,R.raw.easy,R.raw.embarassing,R.raw.getoutofmyway,
-            R.raw.idiots,R.raw.instalock,R.raw.littleshit,R.raw.mixthingsup,R.raw.noway,
-            R.raw.ourhome,R.raw.screwup,R.raw.showmewheretogo,R.raw.sorry,R.raw.superquiet,
-            R.raw.theyaredesperate,R.raw.theyasleep,R.raw.theytried,R.raw.thisisnothing,R.raw.watchthis,
-            R.raw.youguyssuck
+            R.raw.classictap,R.raw.classicreload,R.raw.shortytap,R.raw.shortyreload,
+            R.raw.frenzytap,R.raw.frenzyspray,R.raw.frenzyreload,R.raw.ghosttap,R.raw.ghostreload,
+            R.raw.sherifftap,R.raw.sheriffreload,
+            //R.raw.stingertap,
+            R.raw.stingerspray,R.raw.stingerreload,R.raw.spectretap,
+            R.raw.spectrespray,R.raw.spectrereload,R.raw.buckytap,R.raw.buckyreload,
+            R.raw.judgetap,R.raw.judgereload,R.raw.bulldogtap,R.raw.bulldogspray,R.raw.bulldogreload,
+            R.raw.guardiantap,R.raw.guardianreload,R.raw.phantomtap,R.raw.phantomspray,R.raw.phantomreload,
+            R.raw.vandaltap,R.raw.vandalspray,R.raw.vandalreload,R.raw.marshaltap,R.raw.marshalreload,
+            R.raw.operatortap,R.raw.operatorreload,R.raw.arestap,R.raw.aresspray,R.raw.aresreload,
+            R.raw.odintap,R.raw.odinspray,R.raw.odinreload
     };
-
 
 
 
@@ -73,14 +83,14 @@ public class Tab5 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab5_layout,container,false);
-        layout=rootView.findViewById(R.id.tab5);
+        View rootView=inflater.inflate(R.layout.tab17_layout,container,false);
+        layout=rootView.findViewById(R.id.tab17);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabFiveGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabSeventeenGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -173,7 +183,7 @@ public class Tab5 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabFiveItemClicked(position);
+                        ((MainActivity) context).TabSeventeenItemClicked(position);
                     }
                 }
             });

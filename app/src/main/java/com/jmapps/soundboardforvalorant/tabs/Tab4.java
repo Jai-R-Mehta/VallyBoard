@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//viper
+package com.jmapps.soundboardforvalorant.tabs;
+//cypher
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -30,8 +30,8 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab15 extends Fragment {
+public class Tab4 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,21 +50,18 @@ public class Tab15 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "almost broke a sweat","annoying fly","breathe deep","burn them phoenix","choked on your own poison",
-            "do it yourself","don't get in my way","exterminated","hide the bodies","hopeless mice",
-            "idiots","ill take everything from them","im impressed","loose homeland","make them beg",
-            "pathetic","poor things","poison orb","pull them under","shhhhh",
-            "sh** sh** common","squashed","you wanted a villain","welcome to my world"
+            "Cage triggered","Where is everyone hiding","Cypher on their side","Copy of me","Distracted once I reveal",
+            "Found You","Get out of my city","Gifts behind","Gimme a corpse","Underground doctor",
+            "Exactly where you are","Crush your eyes","I will find You","My eyes are better","Camera is broken",
+            "Suck our souls","Always a killer","reveal their secrets"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.almostbrokeasweat,R.raw.annoyingfly,R.raw.breathedeep,R.raw.burnthemphnx,R.raw.chockedonurownposion,
-            R.raw.doiturelf,R.raw.dontgetinmyway,R.raw.exterminated,R.raw.hidethebodies,R.raw.hopelessmice,
-            R.raw.idts,R.raw.illtakeeverything,R.raw.imimpressed,R.raw.looshomeagain,R.raw.makethembeg,
-            R.raw.pathetic,R.raw.poorthings,R.raw.posionorb,R.raw.pullthemunder,R.raw.shhhhh,R.raw.shishicmmn,
-            R.raw.squashed,R.raw.uwantedavillian,R.raw.welcometomywrl
-
+            R.raw.cagetriggered,R.raw.whereiseveryonehiding,R.raw.cypherduplicate,R.raw.cypherduplicate2,R.raw.distractedwhenireveal,
+            R.raw.foundyou,R.raw.getoutofmycity,R.raw.giftsbehind,R.raw.gimmeacorpse,R.raw.hatevisitingundergrounddoctors,
+            R.raw.iknowexactlywhereuare,R.raw.iwillcrushyoureyes,R.raw.iwillfindyou,R.raw.myeyesarebetterthanyours,R.raw.oneofmycamerasisbroken,
+            R.raw.reynasuckoursouls,R.raw.uforgetimakillr,R.raw.wewillrevealsecret
 
     };
 
@@ -75,14 +72,14 @@ public class Tab15 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab15_layout,container,false);
-        layout=rootView.findViewById(R.id.tab15);
+        View rootView=inflater.inflate(R.layout.tab4_layout,container,false);
+        layout=rootView.findViewById(R.id.tab4);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabFifteenGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabFourGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -175,7 +172,7 @@ public class Tab15 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabFifteenItemClicked(position);
+                        ((MainActivity) context).TabFourItemClicked(position);
                     }
                 }
             });

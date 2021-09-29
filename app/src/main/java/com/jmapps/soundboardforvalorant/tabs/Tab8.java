@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//astra
+package com.jmapps.soundboardforvalorant.tabs;
+//omen
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -14,11 +14,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import androidx.annotation.Nullable;
-import com.google.android.material.snackbar.Snackbar;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
-import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,8 +24,14 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Toast;
 
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.snackbar.Snackbar;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -38,8 +39,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-
-public class Tab1 extends Fragment {
+public class Tab8 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -48,24 +48,24 @@ public class Tab1 extends Fragment {
 
 // Important notice: make sure that the number of items in "String[] items" is equal to the number of items in "soundfiles"!
 
-    // Here you can change the displayed text on the buttons in Tab1
+    // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Abomination","Alright alright","Clear them all","Concealment",
-            "Congratulations","Foolo","Higher plane","Idiot","Knocking them",
-            "Mmmhmmhmm","Na na","Out of stars","Place stars","Prove yourself",
-            "Pulling them in!","Raze ma Queen","recovering it","Take down the boomer",
-            "The end","Too close!","Too easy","Too stupid","We are strong","World divided!",
-            "You are divided!"
+            "A mistake","Another of me","Behind you","Boo!","Cry for",
+            "Dead fools","Fear blinds them","Fool","I am everywhere",
+            "Just human","Keep your focus","Kick them","Blinding",
+            "Rest now","Scatter!","Shadows travelling","Snuff them out",
+            "They don't know","Their nightmare","They are weak","This nightmare",
+            "Thought you were safe","Truly afraid","Block it out omen"
     };
 
-    // Here you can change the mp3 files of the buttons in Tab1
+    // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.abomination,R.raw.alrightalright,R.raw.clearthemall,
-            R.raw.concealment,R.raw.congratulations,R.raw.foolo,R.raw.higherplane,
-            R.raw.idiot,R.raw.knockingthem,R.raw.mhm,R.raw.nana,R.raw.outofstars,
-            R.raw.playstars,R.raw.proveyourself,R.raw.pullingthemin,R.raw.razemaqueen,
-            R.raw.recoveringit,R.raw.takedowntheboomer,R.raw.theend,R.raw.tooclose,R.raw.tooeasy,
-            R.raw.toostupid,R.raw.wearestrong,R.raw.worlddivided,R.raw.youaredivided
+            R.raw.amistake,R.raw.anotherofme,R.raw.behindyou,R.raw.boo,
+            R.raw.cryfor,R.raw.deadfools,R.raw.fearblindsthem,R.raw.fool,
+            R.raw.iameverywhere,R.raw.justhuman,R.raw.keepyourfocus,R.raw.kickthem,
+            R.raw.oblinding,R.raw.restnow,R.raw.scatter,R.raw.shadowstravelling,
+            R.raw.snuffthemout,R.raw.thedontknow,R.raw.theirnightmare,R.raw.theyareweak,
+            R.raw.thisnightmare,R.raw.thoughtyouweresafe,R.raw.trulyafraid,R.raw.youthinkyoucankillme
 
     };
 
@@ -76,13 +76,14 @@ public class Tab1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab1_layout,container,false);
-        layout=rootView.findViewById(R.id.tab1);
+        View rootView=inflater.inflate(R.layout.tab8_layout,container,false);
+        layout=rootView.findViewById(R.id.tab8);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
+
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabOneGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabEightGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -174,9 +175,9 @@ public class Tab1 extends Fragment {
 
                 @Override
                 public void onClick(View v) {
-                        if (context instanceof MainActivity) {
-                            ((MainActivity) context).TabOneItemClicked(position);
-                        }
+                    if (context instanceof MainActivity) {
+                        ((MainActivity) context).TabEightItemClicked(position);
+                    }
                 }
             });
 
@@ -211,7 +212,7 @@ public class Tab1 extends Fragment {
     // Builds dialog for setting ringtone etc.
     public void buildalertdielog_withpermissions(){
         AlertDialog.Builder builder;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             builder = new AlertDialog.Builder(getContext(), android.R.style.Theme_Material_Light_Dialog_Alert);
         }
         else{
@@ -340,4 +341,6 @@ public class Tab1 extends Fragment {
     }
 
 }
+
+
 

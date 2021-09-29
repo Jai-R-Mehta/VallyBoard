@@ -1,5 +1,5 @@
-package com.jmapps.valorantsoundboard.tabs;
-//sova
+package com.jmapps.soundboardforvalorant.tabs;
+//brimstone
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ContentValues;
@@ -14,6 +14,11 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import androidx.annotation.Nullable;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,14 +29,8 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
-import com.google.android.material.snackbar.Snackbar;
-import com.jmapps.valorantsoundboard.MainActivity;
-import com.jmapps.valorantsoundboard.R;
+import com.jmapps.soundboardforvalorant.MainActivity;
+import com.jmapps.soundboardforvalorant.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,7 +38,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class Tab14 extends Fragment {
+public class Tab3 extends Fragment {
     GridView myGridView;
     int position;
     View layout;
@@ -50,22 +49,16 @@ public class Tab14 extends Fragment {
 
     // Here you can change the displayed text on the buttons in Tab3
     public String[] items ={
-            "Bullseye","Concentrate Sova","Come into the unknown","Deploying Drone",
-            "Determined to die","do not hunt the hunter","find their weakness","I am the hunter!","im not tired",
-            "i will find them","hello","level heads","quiver is never full","never give up",
-            "nice shot","no one escapes","not just an archer","nowhere to run","protect homeland",
-            "revealing area","rush them","shockdart","take out healer","there they are",
-            "wind in our favour","they demand a fight","they tire","worth celebrating","u will have intel"
+            "Can't close the settings menu","Got a problem on me","That brimstone is stubborn","Get off","Hands dirty",
+            "Headshot","In charge","Light em up","Molly!","Nice try",
+            "Not so tough","old dog","Shoot the bad guys","Teach them","Ultimate","Watch and learn"
     };
 
     // Here you can change the mp3 files of the buttons in Tab3
     public static int[] soundfiles ={
-            R.raw.bulleyes,R.raw.concentratesova,R.raw.cumintounkown,R.raw.deployingdrone,R.raw.determinedtodie,
-            R.raw.donothunt,R.raw.findtheirweakness,R.raw.iamthehunter,R.raw.imnottired,R.raw.iwillfindthem,
-            R.raw.khelo,R.raw.levelheads,R.raw.myquiverisneverfull,R.raw.nevergiveup,R.raw.niceshot,
-            R.raw.nooneescapessight,R.raw.notjustarcher,R.raw.nowheretorun,R.raw.protectourhomeland,R.raw.revealingarea,
-            R.raw.rushthem,R.raw.shockdart,R.raw.takeouttheirhealer,R.raw.theretheyare,R.raw.thewindsshiftinourfavour,
-            R.raw.theydemandafight,R.raw.theytirewedont,R.raw.thisworthcelecbrating,R.raw.ullhaveurintel
+            R.raw.boomer,R.raw.double1,R.raw.double2,R.raw.getoff,R.raw.handsdirty,
+            R.raw.headshot,R.raw.incharge,R.raw.lightemup,R.raw.molly,R.raw.nicetry,
+            R.raw.notsotough,R.raw.olddog,R.raw.shootthebadguys,R.raw.teachthem,R.raw.ultimate,R.raw.watchnlearn
 
     };
 
@@ -76,14 +69,14 @@ public class Tab14 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView=inflater.inflate(R.layout.tab14_layout,container,false);
-        layout=rootView.findViewById(R.id.tab14);
+        View rootView=inflater.inflate(R.layout.tab3_layout,container,false);
+        layout=rootView.findViewById(R.id.tab3);
         File storage = Environment.getExternalStorageDirectory();
         directory = new File(storage.getAbsolutePath() +"/"+R.string.foldername+"/");
 
 
         // GridView
-        myGridView = (GridView)rootView.findViewById(R.id.tabFourteenGridView);
+        myGridView = (GridView)rootView.findViewById(R.id.tabThreeGridView);
         myGridView.setAdapter(new CustomGridAdapter(getActivity(), items));
         myGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -176,7 +169,7 @@ public class Tab14 extends Fragment {
                 @Override
                 public void onClick(View v) {
                     if (context instanceof MainActivity) {
-                        ((MainActivity) context).TabFourteenItemClicked(position);
+                        ((MainActivity) context).TabThreeItemClicked(position);
                     }
                 }
             });
@@ -212,7 +205,7 @@ public class Tab14 extends Fragment {
     // Builds dialog for setting ringtone etc.
     public void buildalertdielog_withpermissions(){
         AlertDialog.Builder builder;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
             builder = new AlertDialog.Builder(getContext(), android.R.style.Theme_Material_Light_Dialog_Alert);
         }
         else{
